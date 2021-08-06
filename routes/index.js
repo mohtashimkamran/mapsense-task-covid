@@ -9,4 +9,6 @@ console.log("Router connected");
 router.get('/',homeController.home)
 // router.use('/users',require('./user'));
 
+router.post('/get-data',homeController.fetch);
+
 module.exports=router;
